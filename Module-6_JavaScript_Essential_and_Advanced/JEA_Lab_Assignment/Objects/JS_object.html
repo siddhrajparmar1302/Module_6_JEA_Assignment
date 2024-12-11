@@ -1,0 +1,31 @@
+<!-- • Create a JavaScript object car with properties brand, model, and year. Use 
+JavaScript to: 
+• Access and print the car’s brand and model. 
+• Update the year property. 
+• Add a new property color to the car object.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let car = {
+        brand: "Mini",
+        model: "Countryman",
+        year: 2020
+    };
+    console.log("Brand:", car.brand); 
+    console.log("Model:", car["model"]); 
+
+    car.year = 2023;
+    console.log("Updated Year:", car.year);
+
+    car.color = "Black-white";
+    console.log("Car with new color property:", car);
+    </script>
+</body>
+</html>

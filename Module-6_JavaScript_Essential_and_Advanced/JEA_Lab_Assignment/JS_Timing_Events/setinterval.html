@@ -1,0 +1,26 @@
+<!-- Create a digital clock that updates every second using setInterval().  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock">00:00:00</div>
+    <script>
+
+        function updatewatch() {
+            let now = new Date()
+
+            let hours = now.getHours().toString().padStart(2,0)
+            let minutes = now.getMinutes().toString().padStart(2,0)
+            let second = now.getSeconds().toString().padStart(2,0)
+
+            document.getElementById("clock").textContent = `${hours}:${minutes}:${second}`
+        }
+        setInterval(updatewatch, 1000)
+    </script>
+</body>
+</html>
